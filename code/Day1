@@ -1,2 +1,13 @@
 Day-1 code:
------------
+----------- 
+
+ x = int(input())
+ y = int(input())
+ ans = x+y 
+ print(ans)
+
+x = int(input())
+y = int(input())
+ans = x-y 
+print(ans)
+
