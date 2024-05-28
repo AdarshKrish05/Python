@@ -1,2 +1,10 @@
-Conditionls : 
-   1
+Conditionls : are used when you need to do something depending on conditions 
+   there are three conditionals 
+       1)if
+       2)elif
+       3)else 
+ Syntex for conditionals is :
+  ==> and in every line of required conditions to satisfied we should use space before it that space is called indentation.
+      if IF condition is satisfied then running will stop or it will check next condition elif then else 
+      
+
