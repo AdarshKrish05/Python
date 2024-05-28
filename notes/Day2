@@ -1,5 +1,21 @@
-Python Course Day2  learning:
+ Python Course Day2  learning:
 -----------------------------------
 Type Casting : means converting data type 
- There are two types of type casting 
-            ===> 
+ There are two types of type casting -
+            ===>  implicit type casting - happens directly
+                         Eg : a=3 is int type 
+            ===>  Explicit type casting - converting type of variable 
+                         Eg : b=3.14 is Float 
+                               c=int(b) then c becomes 3 
+Comment : 
+  Comments are used mainly in two cases -
+      a) To avoid a line of code from running/executing
+      b) To avoid description of a code from being treated as code and
+         executed.
+
+     2) There are two types of comments -
+          a) Single line comments ( # )
+               Eg: #a = 3
+          b) Multi line comments ( “”” “”” )
+               Eg: “”” a = 3
+                       b = 6 “””
