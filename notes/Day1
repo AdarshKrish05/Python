@@ -1,2 +1,23 @@
 Python Course Day1  learning:
 -----------------------------------
+Variables : variables r like object where we can store things in progarm it is data. 
+  --> letters and underscore(_) are can be used.
+          Eg : abc ABC Abc _bb
+  --> numbers can br used but not in the beginning of variable.
+          Eg : _12a a12s
+  abc ABC Abc are not equal they are different variables.
+
+
+Data Types : data is stored in variables but the types of those data can be different due to kind of data is stored.
+      types of Data : 
+                  ---> Numerical 
+                         1) int
+                         2) float
+                         3) complex 
+                  ---> booleon : result is either True or False 
+                  ---> sequential 
+                         1)string (str)
+                         2)Tuples
+                         3)Lists
+                  --->sets
+                  --->Dictionaries
