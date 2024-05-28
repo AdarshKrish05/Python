@@ -12,8 +12,8 @@ Data Types : data is stored in variables but the types of those data can be diff
       types of Data : 
                   ---> Numerical 
                          1) int
-                         2) float
-                         3) complex 
+                         2) float (decimals)
+                         3) complex  (x+yj)
                   ---> booleon : result is either True or False 
                   ---> sequential 
                          1)string (str)
