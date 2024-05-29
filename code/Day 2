@@ -1,1 +1,36 @@
+x = 5
+print("You entered:",x,sep="")
+
+num= float(input("Enter a pi value : "))
+print("Value of Pi:",num,sep="")
+
+x,y,z = input(" Enter x y z value").split(" ")
+x = int(x)
+y = int(y)
+z = int(z)
+sum = x+y+z
+print(sum)
+
+Name = input("Enter your name : ")
+age = int(input("Enter your age : "))
+print("NAME:",Name,",Age:",age,sep="")
+
+x,y = input("enter name and age : ").split(",")
+print(f"Name:{x},Age:{y} years")
+
+# Solving Quadratic Equations
+     a = int(input("Enter a : "))
+     b = int(input("Enter b : "))
+     c = int(input("Enter c : "))
+     r1 =(-b+((b**2-4*a*c)**0.5))/(2*a)
+     r2 =(-b-((b**2-4*a*c)**0.5))/(2*a)
+     print(f"Roots : {r1},{r2}")
+
+#swaping two numbers without temp variable
+a = int(input("Enter a : "))
+b = int(input("Enter b : "))
+a,b = b,a
+print(f"a:{a},b:{b}")
+
+
 
