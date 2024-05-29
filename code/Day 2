@@ -32,5 +32,41 @@ b = int(input("Enter b : "))
 a,b = b,a
 print(f"a:{a},b:{b}")
 
+C = int(input("Enter Celsius Value = "))
+F = C*(9/5)+32
+K = C+273.15
+print(f"Fahrenheit:{F}\nKelvin:{K}")
+
+# Simple Calculator Program (Project)
+num1 = int(input("Enter num1 : "))
+num2 = int(input("Enter num2 : "))
+op = input("Enter operator : ")
+
+if op == "+":
+    print(f"Addition of 2 Numbers is {num1+num2}")
+
+elif op == "-":
+    print(f"Subtraction of 2 Numbers is {num1-num2}")
+    
+elif op == "*":
+    print(f"Multiplication of 2 Numbers is {num1*num2}")
+    
+elif op == "/":
+    print(f"Division of 2 Numbers {num1/num2}")
+    
+elif op == "%":
+    print(f"Modulo of 2 Numbers is {num1%num2}")
+
+elif op == "**":
+    print(f"Power of 2 Numbers is {num1**num2}")
+    
+elif op == "//":
+    print(f"Flour Division of 2 Numbers is {num1//num2}")
+    
+else:
+    print("Invalid Operator")
+
+
+
 
 
