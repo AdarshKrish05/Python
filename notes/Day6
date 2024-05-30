@@ -1,1 +1,14 @@
+Python day6 notes 
+-----------------------
+Strings : Data types used to represent of textual data 
+  They are sequence of characters and are enclosed in either 
+       1)single quotes (' ')
+       2)double quotes (" ")
+       3)triple quotes (''' ''' or """ """)
 
+String indexing : Strings are ordered sequences, and you can access individual character by using 
+                  indexing. where the first character has index of 0
+  it starts for 0 in forword indexing means starts from left to right and 
+  it starts for -1 in Negative indexing means starts from right to left.
+
+String Slicing : Division of String into several parts 
