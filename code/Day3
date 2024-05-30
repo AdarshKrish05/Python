@@ -1,0 +1,74 @@
+python day3 of coding 
+--------------------------------
+
+                                                                              # Vowel Counter
+ 
+x =input()
+
+y = x.lower()
+a = y.count('a')
+e = y.count('e')
+i = y.count('i')
+o = y.count('o')
+u = y.count('u')
+
+print(f"Number of vowel:{a+e+i+o+u}")
+
+                                                                              # Grade Calculator 
+math = int(input("enter marks in math : "))
+sci = int(input("enter marks in sci  : "))
+eng = int(input("enter marks in eng  : "))
+
+x = math+sci+eng
+
+print(f"Total Marks: {x}")
+print(f"Average Marks: {x/3}") 
+
+if x/3 >= 90 :
+  print("Grade: A+")
+
+elif x/3 >= 80 :
+  print("Grade: A")
+
+elif x/3 >= 70 :
+  print("Grade: B+")
+
+elif x/3 >= 60 :
+  print("Grade: B")
+
+elif x/3 >= 50 :
+  print("Grade: C")
+
+elif x/3 >= 40 :
+  print("Grade: D")
+
+else:
+  print("Grade: F")
+
+                                                                              # Palindromw Checker
+
+s = input("Enter")
+x = s[::-1]
+
+if x == s :
+  print("it is a Palindrome.")
+
+else:
+  print("it is not a Palindrome.")
+
+                                                                              # Largest of three numbers 
+a = input("Enter Three Numbers:")
+x,y,z = a.split(",")
+
+num1 = int(x)
+num2 = int(y)
+num3 = int(z)
+
+if num1 > num2 and num1 > num3 :
+  print(f"The Largest number is {num1}.")
+
+elif num2> num1 and num2 > num3 :
+  print(f"The Largest Number is {num2}.")
+
+else : 
+  print(f"The Largest Number is {num3}.")
