@@ -15,6 +15,7 @@ String Slicing : Division of String into several parts
 
      Syntex for String Slicing is 
             string _Variable[start:stop:step] 
+
                Eg : 1) print(s[1])        6) print(s[2:])
                     2) print(s[-1])       7) print(s[:-1])
                     3) print(s[1:3])      8) print(s[::2])
@@ -22,9 +23,32 @@ String Slicing : Division of String into several parts
                     5) print(s[:3])      10) print(s[::-1])
                                s = hello world 
                                    012345678910
-                    1) e               6) llo world
-                    2) d               7) hello worl
-                    3) el              8) hlowrd
-                    4) ello worl       9) el ol
-                    5) hel            10) dlrow olleh
+                      1) e               6) llo world
+                      2) d               7) hello worl
+                      3) el              8) hlowrd
+                      4) ello worl       9) el ol
+                      5) hel            10) dlrow olleh
+
+
+String Concatenation : you can concatenate strigd using + operator 
+
+String length : you can find the lenght of string using len() function 
+
+Sring Methods : 
+
+str.upper()          str.upper()          str.upper()     
+str.lowwer()          str.upper()          str.upper() 
+str.capitalized()          str.upper()          str.upper() 
+str.title()          str.upper()          str.upper() 
+str.strip()          str.upper()          str.upper() 
+str.lstrip()          str.upper()          str.upper() 
+str.upper()          str.upper()          str.upper() 
+str.upper()          str.upper()          str.upper() 
+str.upper()          str.upper()          str.upper() 
+
+/
+
+
+
+      
 
