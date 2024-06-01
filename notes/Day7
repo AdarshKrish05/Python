@@ -36,11 +36,7 @@ Syntex:
 for outer_variable in outer_sequence:
  #code 
   for inner_variable in inner_sequence
-   #code 
-
-
-
-
+   #code
 
 
 
