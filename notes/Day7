@@ -1,1 +1,48 @@
+Python Day7 notes
+------------------------------
+
+Loops : 
+Loops are used to execute a block of code repeatedly as long as a certain condition is True or for a specific number of iterations 
+
+Types of Loops : 
+       1) while 
+       2) for
+
+While Loop : 
+The while loop execute a block of code as long as a specific condition is true.It is continuously checks the condition before each iteration
+ and stops when the condition becomes false
+
+Syntax:
+while condition:
+ #code 
+
+For Loop : 
+A for loop is a way to repeat a block of code for each item in a collection or for a specific range of numbers 
+
+Syntax: 
+for variable in range(start:stop:step):
+ #code 
+
+for loop can be used for sequence (like list,tuple,string,dictionary) and execute a block of code for each item in the sequence
+
+Syntax:
+for item in sequence
+ #code
+
+ Nested loops: 
+ where loop is placed inside another loop
+
+Syntex:
+for outer_variable in outer_sequence:
+ #code 
+  for inner_variable in inner_sequence
+   #code 
+
+
+
+
+
+
+
+
 
