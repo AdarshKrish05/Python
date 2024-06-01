@@ -1,1 +1,21 @@
+Python day8 notes
+------------------------------
+
+Break: if during the execution of the loop Python interpreter encounters break, it immediately stops the loop execution and exits out of it
+
+Syntax:
+while condition:
+ #code block
+ if some_condition :
+  break 
+#Exit the loop if the condition is met.
+
+continue: it is used to skip the rest of the current iteration in aloop and move to the next iteration 
+
+Syntax:
+while condition:
+ #code block
+ if some_condition :
+  continue 
+#skip this iteration.
 
