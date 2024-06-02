@@ -55,18 +55,8 @@ x = int(input())
 y = int(input())
 ans = x<<y 
 print(ans)
-                          #How Can i keep limit to x or y
+                        
 x = int(input())
 y = int(input())
 ans = x>>y 
 print(ans)
-
-
-
-
-
-
-
-
-
-
