@@ -1,0 +1,21 @@
+Python Day9 Notes
+---------------------------------
+Function : 
+Functions are blocks of organized, reusable code that perform a specific task. 
+                                           dividing a complex problem into smaller chunks makes our program easy to understand and reuse.
+Types of Functions : 
+        1)predefined
+        2)user-defined
+
+Syntax:
+def function_name(parameters):
+    #Functions body
+
+function_name(parameters) is called the function cell
+
+Return Statement : 
+Functions can return a value using the return statement. The returned value can be assigned to a variable or used in expressions.
+
+def function_name(parameters)
+  # function body
+  return 
