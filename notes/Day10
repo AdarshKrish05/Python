@@ -1,0 +1,11 @@
+Python Day10 notes
+-------------------------------
+Lists: a list is a mutable data structure used to store a collection of items.
+       Defined using square Brackets []
+       Contains elements of different data types
+       allow duplicates. 
+indexing can be done in list.it may be positive or negative.
+
+Modifying
+
+       
