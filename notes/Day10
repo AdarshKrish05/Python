@@ -4,8 +4,49 @@ Lists: a list is a mutable data structure used to store a collection of items.
        Defined using square Brackets []
        Contains elements of different data types
        allow duplicates. 
-indexing can be done in list.it may be positive or negative.
+indexing can be done in a list. It may be positive or negative.
 
-Modifying
+we can modify individual elements in a list 
+    ex: fruits = ["apple", "banana", "cherry"]
+        fruits[0] = "orange"
+        print(fruits)  #Output: ["orange", "banana", "cherry"]
+
+   Methods:
+       syntax for methods is 
+        list_name.method_name
+1) append(): adds an element to the end of the list.
+2) insert(): inserts an element at a specific index.
+3) remove(): removes the first occurrence of a specified index ( or the last element if no index is given).
+4) pop() : removes and returns the element at a specified index ( or the last element if no index is given).
+5) index() : returns the index of the first occurrence of a specified element.
+6) count() : Returns the number of occurrences of a specified element in the list.
+7) sort() : Sorts the list in ascending order. 
+8) reverse(): reverses the order of the elements in the list.
+
+List Concatenation:
+lists can be concatenated by using the + operator, which creates a new list containing elements from both lists.
+
+List Comprehensions:
+List Comprehensions provide a concise way to creae lists using a single line of code.
+
+Syntax:
+  new_list = [expression for item in iterable if condition]
+      eg: inp = input().split()
+           l = [int(item) for item in inp]
+          print(l)
+
+Tuple: Tuples used to store a collection of items 
+       a tuple is an ordered, immutable collection of elements       
+       it is similar to a list, but the main difference is that tuple cannot be changed after creation.
+       once a tuple is created, you cannot add, remove, or modify its elements.
+to create a tuple, we use parentheses () with elements separated by commas 
+
+Methods: count() and index().
+
+
+
+
+
+
 
        
