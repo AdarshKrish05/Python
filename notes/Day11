@@ -1,1 +1,85 @@
+Sets: Sets in Python are an unordered collection of unique elements
+      defined using curly braces {} or the set()
+      mutable
+      Duplicate elements are automatically removed.
+Methods: 
+Adding elements 
+add() method to add a single element to a set.
+  eg: my_set = {1,2}
+      my_set.add(3)
+      print(my_set)   #output = {1,2,3}
+
+removing elements 
+remove() or discard() method to remove a single element from a set.
+  eg: my_set = {1,2,3}
+      my_set.remove(3)
+      print(my_set)   #output = {1,2}
+
+clear(): removes all elements, resulting in an empty set
+pop(): it removes the last elements
+update(): to update an element
+
+Set Operations:
+=> union
+=> intersection
+=> difference
+=> symmetric difference
+
+    eg: s1={1,2,2,3,4,5,6}
+        s2={6,7,7,8,9,10}
+
+        union_set = s1.union(s2)
+        print(union_set)                     #output: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+        intersection_set = s1.intersection(s2)
+        print(intersection_set)              #output: {6}
+
+        difference_set = s1.difference(s2)
+        print(difference_set)                #output: {1, 2, 3, 4, 5}
+
+        symmetric_difference_set = s1.symmetric_difference(s2)
+        print(symmetric_difference_set)      #output: {1, 2, 3, 4, 5}
+
+
+Dictionary: A dictionary is an unordered collection of key-value pairs.Are used to store data in the form of key-value pairs, where each key is unique.
+
+my_dict = {"name": 'adarsh', 'age': 17,}
+print(my_dict)
+
+Accessing values:
+you can access the value in a dictionary using [] with the key.
+          Eg: my_dict = {"name": 'adarsh', 'age': 17,}
+
+             name_value = my dict['name']
+             age_value = my dict['age']
+
+Adding values: 
+to add new key-value pairs or update existing ones in a dictionary, you can use [] and the assignment operator (=).
+
+          Eg: my_dict = {"name": 'adarsh', 'age': 17,}
+              my_dict['gender'] = 'male'
+              print(my_dict)
+
+Methods
+1) keys()
+2) values()
+3) items()
+4) get()
+5) pop()
+6) update()        
+
+dictionary can be used in looping
+
+
+
+
+
+
+
+
+
+
+
+
+
 
