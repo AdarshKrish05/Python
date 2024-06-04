@@ -1,0 +1,82 @@
+L = [10,20,30,40,50]
+sum = 0
+length = len(L)
+for i in range(0,length):
+  sum += L[i]
+                              # We can used either of this code
+for i in L:
+  sum += i
+
+print(sum)
+
+l=[15,2,6,25,10]
+
+max = l[0]
+mini = l[0]
+'''
+for i in l:
+  if max<i:
+    max=i
+  elif mini<i:
+    mini=i
+print(f"maximum = {max}\nminimum = {mini}")
+'''
+'''
+l.sort()
+print(l[-1],l[0])
+'''
+
+
+inp = input().split(',')
+
+l = [int(item) for item in inp]
+
+newL = []
+
+for i in l:
+
+  if i in newL:
+    continue
+  else:
+    newL.append(i)
+    
+print(newL)
+
+
+inp = input().split(",")
+l = [ int(a) for a in inp]
+n = int(input())
+
+count=0
+
+for i in l:
+  if i == n:
+    count +=1 
+
+print(f"Count of {n}:{count}")
+
+# We can use count method
+
+
+inp = input().split(",")
+set1 = {int(a) for a in inp} #1,2,3,4,5
+inpu = input().split(",")
+set2 = {int(a) for a in inpu} #4,5,6,7,8
+  
+i = set1.intersection(set2)
+u = set1.union(set2)
+
+print(f"Intersection:{i}\nUnion:{u}") 
+
+
+my_dict = {} 
+name = input("enter your name:")
+age = int(input("enter age : "))
+c = input("enter city:")
+
+my_dict["name"] = name
+my_dict["age"] = age
+my_dict["city"] = c
+
+for i,j in my_dict.items():
+  print(i,j)
