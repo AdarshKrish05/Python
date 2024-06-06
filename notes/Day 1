@@ -19,5 +19,5 @@ Data Types : data is stored in variables but the types of those data can be diff
                          1)string (str)
                          2)Tuples
                          3)Lists
-                  --->sets
-                  --->Dictionaries
+                  ---> sets
+                  ---> Dictionaries
