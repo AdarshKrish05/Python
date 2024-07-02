@@ -1,1 +1,23 @@
 
+Numpy is a fundamental package in Python. it provides support for multi-dimensional arrays and matrices.
+
+Key features of NumPy are:
+   1) N-dimensional arrays
+   2) Efficient Operations
+   3) Broadcasting
+   4) indexing and slicing
+ 
+importing NumPy:
+ import numpy as np
+
+NumPy Arrays:
+
+np.arange():
+   np.arange() is a function in NumPy used to create an array within a specified range. 
+      Its syntax is:
+         numpy.arange([start, ]stop, [step, ]dtype=None)
+
+To Create a NumPy array:
+    arr = np.arange(10)
+    print(arr)
+    #output: [0,1,2,3,4,5,6,7,8,9]
