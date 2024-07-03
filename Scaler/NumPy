@@ -21,3 +21,203 @@ To Create a NumPy array:
     arr = np.arange(10)
     print(arr)
     #output: [0,1,2,3,4,5,6,7,8,9]
+
+1D Arrays:
+
+1D arrays are like traditional arrays or lists. They have a single row and can be indexed using a single index.
+
+   # Create a 1D array
+      arr_1d = np.array([1, 2, 3, 4, 5])
+      print(arr_1d)       # Output: [1 2 3 4 5]
+      print(arr_1d[0])    # Output: 1
+
+2D Arrays:
+
+2D arrays, also known as matrices, have rows and columns. They are indexed using two indices, one for the row and one for the column.
+
+ # Create a 2D array
+   arr_2d = np.array([[1, 2, 3],
+                      [4, 5, 6],
+                      [7, 8, 9]])
+   print(arr_2d)   
+
+
+
+Properties of NumPy Arrays:
+
+1. Shape:
+     The shape of an ndarray describes the size of each dimension of the array. 
+     It is represented as a tuple of integers indicating the number of elements along each dimension.
+
+ # Create a 2D array
+    arr_2d = np.array([[1, 2, 3], [4, 5, 6]])
+
+ # Print the shape
+    print("Shape of the array:", arr_2d.shape)  # Output: (2, 3)
+
+
+2. Data Type (dtype):
+    The data a type of a ndarray specifies the type of elements stored in the array. 
+    NumPy arrays can hold elements of different types such as integers, floats, booleans, etc.
+
+ # Create an array with a specific data type
+    arr_float = np.array([1.1, 2.2, 3.3], dtype=np.float32)
+ # Print the data type
+    print("Data type of the array:", arr_float.dtype)  # Output: float32
+
+3. Size:
+    The size of an ndarray is the total number of elements in the array. It is equal to the product of the dimensions of the array.
+
+ # Create a 3D array
+    arr_3d = np.zeros((2, 3, 4))
+    print(arr_3d)
+
+ # Print the size
+    print("Size of the array:", arr_3d.size)  # Output: 24 (2 * 3 * 4)
+
+4. Number of Dimensions (ndim):
+    The ndim attribute of an ndarray specifies the number of dimensions or axes of the array.
+
+ # Create a 4D array
+    arr_4d = np.ones((2, 3, 4, 5))
+
+ # Print the number of dimensions
+    print("Number of dimensions:", arr_4d.ndim)  # Output: 4
+
+5. Itemsize:
+    The itemsize attribute of a ndarray specifies the size of each element in bytes.
+
+  # Create an array of integers
+    arr_int = np.array([1, 2, 3])
+    print(arr_int.dtype)
+   
+ # Print the item size
+    print("Size of each element (in bytes):", arr_int.itemsize)  # Output: 8 (for 64-bit integer)
+
+NumPy Data Types and Precision:
+
+  NumPy Data Types (dtypes):
+
+      NumPy provides a variety of data types to represent different kinds of numerical data. 
+      These data types are important for controlling memory usage and ensuring data integrity in numerical computations.
+
+Common NumPy Data Types:
+
+     int: Integer (default size depends on the platform).
+     float: Floating point number (default size depends on the platform).
+     bool: Boolean (True or False).
+     complex: Complex number with real and imaginary parts.
+     uint: Unsigned integer (no negative values).
+
+Specifying Data Types:
+
+ You can specify the data type of an ndarray using the "dtype" parameter of NumPy functions or by providing the data type as an argument to the array creation functions.
+
+   # Create an array with a specific data type
+      arr_int32 = np.array([1, 2, 3], dtype=np.int32)
+      arr_float64 = np.array([1.1, 2.2, 3.3], dtype=np.float64)
+
+      print("Data type of arr_int32:", arr_int32.dtype)   # Output: int32
+      print("Data type of arr_float64:", arr_float64.dtype)   # Output: float64
+
+Precision:
+    Precision refers to the level of detail and accuracy with which numerical values are represented. 
+    NumPy data types have different levels of precision, which determine the range of values they can represent and the amount of memory they occupy
+
+  # Create an array with different data types
+    arr_int32 = np.array([1234567890, 1234567890], dtype=np.int32)
+    arr_int64 = np.array([1234567890, 1234567890], dtype=np.int64)
+
+    print("Data type of arr_int32:", arr_int32.dtype)   # Output: int32
+    print("Data type of arr_int64:", arr_int64.dtype)   # Output: int64
+
+    print(arr_int32)
+
+  # In this example, the `int32` data type has limited precision compared to `int64`, which can represent larger integers without loss of precision.
+
+np.zeros, np.ones, np.full:
+  np.zeros creates an array filled with zeros. It takes the shape of the desired array as input and returns an array of that shape filled with zeros.
+
+    Syntax: 
+       numpy.zeros(shape, dtype=float)
+
+ shape: The shape of the array (tuple of integers).
+ dtype: Optional. The data type of the array. Default is float.
+
+   # Create a 2x3 array filled with zeros
+      zeros_array = np.zeros((2, 3))
+      print(zeros_array)
+np.ones:
+  np.ones creates an array filled with ones. Similar to np.zeros, it takes the shape of the desired array as input and returns an array of that shape filled with ones.
+
+     Syntax:
+        numpy.ones(shape, dtype=None)
+
+ shape: The shape of the array (tuple of integers).
+ dtype: Optional. The data type of the array. If not specified, the default is determined by the data type of 1.
+
+  # Create a 3x2 array filled with ones
+     ones_array = np.ones((3, 2))
+     print(ones_array)
+
+np.full:
+  np.full creates an array filled with a specified constant value. It takes the shape of the desired array and the constant value as input and returns an array of that shape filled with the specified value.
+
+    Syntax:
+       numpy.full(shape, fill_value, dtype=None)
+
+shape: The shape of the array (tuple of integers). 
+fill_value: The constant value to fill the array with.
+dtype: Optional. The data type of the array. If not specified, the default is determined by the data type of fill_value.
+
+
+Array Operations - NumPy
+1. Arithmetic Operations
+  # Addition
+   arr_sum = np.add([1, 2, 3], [4, 5, 6])
+   print("Addition:", arr_sum)  # Output: [5 7 9]
+
+  # Subtraction
+   arr_diff = np.subtract([5, 6, 7], [2, 3, 1])
+   print("Subtraction:", arr_diff)  # Output: [3 3 6]
+
+  # Multiplication
+   arr_prod = np.multiply([2, 3, 4], [3, 4, 5])
+   print("Multiplication:", arr_prod)  # Output: [ 6 12 20]
+
+  # Division
+   arr_div = np.divide([10, 12, 14], [2, 3, 2])
+   print("Division:", arr_div)  # Output: [5. 4. 7.]
+
+  # Modulus
+   arr_mod = np.mod([10, 11, 12], [3, 4, 5])
+   print("Modulus:", arr_mod)  # Output: [1 3 2]
+
+  # Exponentiation
+   arr_pow = np.power([2, 3, 4], [2, 3, 2])
+   print("Exponentiation:", arr_pow)  # Output: [ 4 27 16]
+
+2. Relational Operations:
+  # Create sample arrays
+   arr1 = np.array([1, 2, 3, 4])
+   arr2 = np.array([2, 2, 4, 3])
+
+  # Equal
+   print("Equal:", arr1 == arr2)  # Output: [False  True False False]
+
+  # Not Equal
+   print("Not Equal:", arr1 != arr2)  # Output: [ True False  True  True]
+
+  # Greater Than
+   print("Greater Than:", arr1 > arr2)  # Output: [False False False  True]
+
+  # Greater Than or Equal To
+   print("Greater Than or Equal To:", arr1 >= arr2)  # Output: [False  True False  True]
+
+  # Less Than
+   print("Less Than:", arr1 < arr2)  # Output: [ True False False False]
+
+  # Less Than or Equal To
+   print("Less Than or Equal To:", arr1 <= arr2)  # Output: [ True  True  True False]
+
+
