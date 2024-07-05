@@ -220,4 +220,252 @@ Array Operations - NumPy
   # Less Than or Equal To
    print("Less Than or Equal To:", arr1 <= arr2)  # Output: [ True  True  True False]
 
+Indexing and Slicing for 1D Arrays
+
+1. Indexing:
+      Indexing refers to accessing individual elements of an array using their position (index) within the array. 
+      In NumPy, indexing starts from 0, so the first element has index 0, the second element has index 1, and so on.
+
+    # Create a 1D array
+      arr = np.array([1, 2, 3, 4, 5])
+
+    # Access individual elements using indexing
+      print("First element:", arr[0])   # Output: 1
+      print("Second element:", arr[1])  # Output: 2
+      print("Last element:", arr[-1])   # Output: 5 (negative indexing)
+
+2. Slicing:
+      Slicing allows you to extract a subset of elements from an array by specifying a range of indices. 
+      The basic syntax for slicing is start:stop:step, where start is the starting index (inclusive), stop is the ending index (exclusive), and step is the step size.
+
+     # Create a 1D array
+      arr = np.array([1, 2, 3, 4, 5])
+
+     # Slice elements from index 1 to index 3 (exclusive)
+      print("Slice:", arr[1:3])  # Output: [2 3]
+
+     # Slice elements from index 0 to index 4 with step size 2
+      print("Slice with step:", arr[0:4:2])  # Output: [1 3]
+
+3. Negative Indexing:
+      Negative indexing allows you to access elements from the end of the array by specifying negative indices. 
+      -1 refers to the last element, -2 refers to the second last element, and so on.
+
+     # Create a 1D array
+      arr = np.array([1, 2, 3, 4, 5])
+
+     # Access the last element using negative indexing
+      print("Last element:", arr[-1])  # Output: 5
+
+4. Slicing with Omitted Indices:
+      You can omit any of the slicing parameters to use default values. 
+      Omitting start defaults to 0, omitting stop defaults to the end of the array, and omitting step defaults to 1.
+
+     # Create a 1D array
+   arr = np.array([1, 2, 3, 4, 5])
+
+     # Slice elements from the beginning to index 3 (exclusive)
+      print("Slice with omitted start:", arr[:3])  # Output: [1 2 3]
+
+     # Slice elements from index 2 to the end
+      print("Slice with omitted stop:", arr[2:])  # Output: [3 4 5]
+
+     # Slice elements with step size 2
+      print("Slice with omitted step:", arr[::2])  # Output: [1 3 5]
+
+Indexing and Slicing for 2D Arrays:
+
+1. Indexing:
+     Indexing refers to accessing individual elements of an array using their position (index) within the array. 
+     In a 2D array, indexing is done using row and column indices
+
+     # Create a 2D array
+      arr = np.array([[1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]])
+
+     # Access individual elements using indexing
+      print("Element at (0, 0):", arr[0, 0])  # Output: 1
+      print("Element at (1, 2):", arr[1, 2])  # Output: 6
+
+2. Slicing:
+      Slicing allows you to extract a subset of elements from an array by specifying ranges of row and column indices. 
+      The basic syntax for slicing is start:stop:step, where start is the starting index (inclusive), stop is the ending index (exclusive), and step is the step size.
+
+     # Create a 2D array
+      arr = np.array([[1, 2, 3],
+                      [4, 5, 6],
+                      [7, 8, 9]])
+
+     # Slice elements from rows 0 to 1 (exclusive) and columns 1 to 2 (exclusive)
+      print("Slice:", arr[0:2, 1:3])
+
+
+     # Modify slice
+      arr[0:2, 1:3] = [[10, 20], [30, 40]]
+      print("Modified array after slicing:", arr)
+
+3. Negative Indexing:
+      Negative indexing can also be used in 2D arrays to access elements from the end of the array.
+
+     # Create a 2D array
+      arr = np.array([[1, 2, 3],
+                      [4, 5, 6],
+                      [7, 8, 9]])
+   
+     # Access the last element using negative indexing
+      print("Last element:", arr[-1, -1])  # Output: 9
+
+4. Slicing with Omitted Indices:
+      You can omit any of the slicing parameters to use default values. 
+      Omitting start defaults to 0, omitting stop defaults to the end of the array, and omitting step defaults to 1.
+
+     # Create a 2D array
+      arr = np.array([[1, 2, 3],
+                      [4, 5, 6],
+                      [7, 8, 9]])
+
+     # Slice elements from rows 1 to the end and all columns
+      print("Slice with omitted start and stop:", arr[1:])
+
+     # Slice elements from all rows and columns 0 to 1 (exclusive) with step size 2
+      print("Slice with omitted step:", arr[:, 0:2:2])
+
+Playing With Arrays:
+
+1. Transposing Arrays:
+      Transposing an array means exchanging its rows and columns. In NumPy, you can transpose an array using the T attribute or the transpose() function.
+
+     # Create a 2D array
+      arr_2d = np.array([[1, 2, 3],
+                    [4, 5, 6]])
+
+     # Transpose the array
+      transposed_arr = arr_2d.T
+      print("Transposed array:")
+      print(transposed_arr)
+
+2. Swapping Axes:
+      Swapping axes means rearranging the dimensions of an array. You can swap axes using the swapaxes() function.
+
+     # Create a 2D array
+      arr_2d = np.array([[1, 2, 3],
+                          [4, 5, 6]])
+
+     # Swap axes
+      swapped_arr = arr_2d.swapaxes(0,1)
+      print("Swapped array:")
+      print(swapped_arr)
+
+     # Create a 3D array of shape (2, 3, 4)
+     # Think of it as 2 layers of 3x4 matrices
+      array_3d = np.array([[[ 1,  2,  3,  4],
+                            [ 5,  6,  7,  8],
+                            [ 9, 10, 11, 12]],
+
+                           [[13, 14, 15, 16],
+                            [17, 18, 19, 20],
+                            [21, 22, 23, 24]]])
+
+      print("Original array shape:", array_3d.shape)
+
+     # Swap the first and last axes (depth with columns)
+      swapped_array = np.swapaxes(array_3d, 0, 2)
+
+      print("Swapped array shape:", swapped_array.shape)
+      print("Swapped array data:\n", swapped_array)
+
+3. Pseudo-random Number Generation:
+      NumPy provides various functions for generating pseudo-random numbers. 
+      These functions are located in the numpy.random module. 
+      You can generate random numbers from different distributions, such as uniform, normal, binomial, etc.
+
+# Pseudo-random Number Generation in 1D Array:
+
+     # Generate 5 random integers between 1 and 10
+      random_integers = np.random.randint(1, 10, size=5)
+      print("Random integers (1D):", random_integers)
+
+      # Generate 5 random numbers from a normal distribution
+      random_normal = np.random.normal(size=5)
+      print("Random numbers from normal distribution (1D):", random_normal)
+
+
+# Pseudo-random Number Generation in 2D Array:
+
+     # Generate a 2D array of shape (3, 3) with random integers between 1 and 10
+      random_integers_2d = np.random.randint(1, 10, size=(3, 3))
+      print("Random integers (2D):")
+      print(random_integers_2d)
+
+     # Generate a 2D array of shape (3, 3) with random numbers from a normal distribution
+      random_normal_2d = np.random.normal(size=(3, 3))
+      print("Random numbers from normal distribution (2D):")
+      print(random_normal_2d)
+
+Operations on 2D Arrays:
+1. Matrix Multiplication (np.matmul()):
+      Matrix multiplication is a fundamental operation in linear algebra, where you multiply two matrices to obtain a new matrix. 
+      You can perform matrix multiplication in NumPy using the np.matmul() function.
+
+     # Define matrices
+      matrix_a = np.array([[1, 2], [3, 4]])
+      matrix_b = np.array([[5, 6], [7, 8]])
+
+     # Matrix multiplication using np.matmul()
+      result = np.matmul(matrix_a, matrix_b)
+      print("Matrix Multiplication:")
+      print(result)
+
+2. Reshaping (np.reshape()):
+
+      Reshaping an array means changing the shape of the array without changing its data.
+      It's useful for converting arrays between different dimensions or rearranging their layout.
+
+   # Reshaping an array
+      arr = np.arange(1, 10)  # 1D array from 1 to 9
+      print(arr)
+      reshaped_arr = arr.reshape((3, 3))  # Reshape to a 3x3 matrix
+      print("Reshaped array:")
+      print(reshaped_arr)
+
+3. Transpose (np.transpose()):
+      Transposing a matrix means flipping its rows with its columns. 
+      In NumPy, you can obtain the transpose of a matrix using the np.transpose() function or the .T attribute.
+
+    # Transposing a matrix
+      matrix = np.array([[1, 2, 3],
+                         [4, 5, 6]])
+      transposed_matrix = np.transpose(matrix)
+      print("Transposed matrix:")
+      print(transposed_matrix)
+
+4. Aggregate Functions:
+      Aggregate functions in NumPy are functions that operate on arrays and return a single value, summarizing the data in some way.
+      Common aggregate functions include np.sum(), np.max(), np.min(), np.mean(), etc.
+
+     # Aggregate functions
+      matrix = np.array([[1, 2, 3],
+                         [4, 5, 6]])
+
+      print("Sum of all elements:", np.sum(matrix))  # Output: 21
+      print("Maximum element:", np.max(matrix))  # Output: 6
+      print("Minimum element:", np.min(matrix))  # Output: 1
+      print("Mean of all elements:", np.mean(matrix))  # Output: 3.5
+
+Array Manipulations:
+  1. reshape: The reshape method returns a new array with the specified shape, without changing the data.
+  2. resize: The resize method changes the shape and size of an array in-place. 
+             This method can alter the original array and fill in with repeated copies of a if the new array is larger than the original.
+  3. ravel: The ravel method returns a flattened one-dimensional array. It's a convenient way to convert any multi-dimensional array into a flat 1D array.
+  4. flatten: Similar to ravel, but flatten returns a copy instead of a view of the original data, thus not affecting the original array.
+  5. squeeze: The squeeze method is used to remove axes of length one from an array.
+  6. expand_dims: The opposite of squeeze, expand_dims is used to add an axis at a specified position.
+
+Splitting and Joining:
+  1. np.split: Splits an array into multiple sub-arrays.
+  2. np.array_split: Similar to np.split, but allows for splitting into unequal subarrays.
+  3. np.hsplit and np.vsplit: These are specific cases of split for horizontal and vertical splitting respectively, useful for 2D arrays (matrices).
+  4. np.concatenate: Concatenates a sequence of arrays along an existing axis
+  5. np.hstack and np.vstack: These are specific cases of concatenate for horizontal and vertical stacking respectively.
 
