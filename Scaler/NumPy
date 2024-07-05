@@ -469,3 +469,30 @@ Splitting and Joining:
   4. np.concatenate: Concatenates a sequence of arrays along an existing axis
   5. np.hstack and np.vstack: These are specific cases of concatenate for horizontal and vertical stacking respectively.
 
+Adding and Removing elements:
+  1. np.append: Adds elements to the end of an array.
+  2. np.insert: Inserts elements at a specific position in the array.
+  3. np.delete: Removes elements at a specific position from the array.
+
+# Create a one-dimensional array
+a = np.array([1, 2, 3, 4, 5])
+
+# Delete the element at index 2
+result = np.delete(a, 2)
+print("Array after deleting element at index 2:", result)
+
+# Delete multiple elements
+result = np.delete(a, [0, 3])
+print("Array after deleting elements at indices 0 and 3:", result)
+
+# Create a two-dimensional array
+b = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# Delete the second row
+result = np.delete(b, 1, axis=0)
+print("Array after deleting second row:\n", result)
+
+# Delete the third column
+result = np.delete(b, 2, axis=1)
+print("Array after deleting third column:\n", result)
+
